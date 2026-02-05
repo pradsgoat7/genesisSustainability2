@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'Climate Story | Mumbai 2045',
+  title: 'Climate Story | Mumbai 2026',
   description: 'See how climate change will transform Mumbai over the next 20 years. A personalized, data-driven narrative experience.',
 }
 
