@@ -23,18 +23,22 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section className={`${styles.hero} ${isVisible ? styles.visible : ''}`}>
         <div className={styles.heroContent}>
-          <p className={styles.tagline}>Mumbai, 2045</p>
+          <p className={styles.tagline}>Mumbai, 2026</p>
           
-          <h1 className={styles.title}>
+          <h2 className={styles.title}>
             Climate change isn't global.
             <br />
             <span className={styles.highlight}>It's personal.</span>
-          </h1>
+          </h2>
           
           <p className={styles.subtitle}>
             See how the next 20 years will change the city you call home.
             <br />
             A data-driven story made just for you.
+            <br/>
+           EchoEarth transforms complex sustainability data into relatable stories
+          that show how climate change affects real lives — including yours.
+          <br/>
           </p>
           
           <Link href="/personalize" className={styles.ctaButton}>
@@ -47,6 +51,36 @@ export default function LandingPage() {
           <div className={styles.scrollArrow}></div>
         </div>
       </section>
+      
+    <section className="why-ecoearth">
+  <h2>Why EcoEarth?</h2>
+
+  <div className="why-cards">
+    <div className="why-card">
+      <h3><b>🌍 The Problem </b></h3>
+      <p>
+        Climate data exists everywhere, but charts and numbers fail to
+        create emotional connection or inspire action.
+      </p>
+    </div>
+
+    <div className="why-card">
+      <h3><b> The Gap </b></h3>
+      <p>
+        People don’t act on information alone. They act when they feel
+        personally affected and emotionally involved.
+      </p>
+    </div>
+
+    <div className="why-card">
+      <h3> <b>🌱 Our Approach </b></h3>
+      <p>
+        EcoEarth transforms raw sustainability data into relatable,
+        visual stories that people can understand and remember.
+      </p>
+    </div>
+  </div>
+</section>
 
       {/* Preview Section */}
       <section className={styles.preview}>

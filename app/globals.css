@@ -106,3 +106,50 @@ button {
   opacity: 1;
   transform: translateY(0);
 }
+
+.why-ecoearth {
+  padding: 90px 10%;
+  background: linear-gradient(180deg, #061f2e, #0b2e3c);
+  text-align: center;
+  color: #ffffff;
+}
+
+.why-ecoearth h2 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+}
+
+.why-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  padding: 35px 30px;
+  border-radius: 18px;
+  max-width: 320px;
+  text-align: left;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+.why-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #7babdf;
+}
+
+.why-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #e6f5ef;
+}
