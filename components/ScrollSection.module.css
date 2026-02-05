@@ -1,0 +1,110 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px;
+  position: relative;
+  transition: background 0.8s ease;
+}
+
+.content {
+  max-width: 800px;
+  width: 100%;
+  opacity: 0.4;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.active .content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Year Badge */
+.yearBadge {
+  margin-bottom: 32px;
+}
+
+.year {
+  display: inline-block;
+  padding: 12px 32px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* Narrative Text */
+.narrative {
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+/* Visual Container */
+.visual {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 32px;
+}
+
+/* Mood Variations */
+.moodCalm {
+  background: linear-gradient(180deg, 
+    rgba(10, 22, 40, 1) 0%, 
+    rgba(20, 40, 60, 1) 100%);
+}
+
+.moodCalm .year {
+  background: rgba(34, 211, 238, 0.2);
+  color: #22d3ee;
+}
+
+.moodNeutral {
+  background: linear-gradient(180deg, 
+    rgba(20, 40, 60, 1) 0%, 
+    rgba(30, 50, 70, 1) 100%);
+}
+
+.moodNeutral .year {
+  background: rgba(148, 163, 184, 0.2);
+  color: #94a3b8;
+}
+
+.moodWarning {
+  background: linear-gradient(180deg, 
+    rgba(30, 40, 50, 1) 0%, 
+    rgba(50, 40, 30, 1) 100%);
+}
+
+.moodWarning .year {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+}
+
+.moodDanger {
+  background: linear-gradient(180deg, 
+    rgba(40, 30, 30, 1) 0%, 
+    rgba(60, 25, 25, 1) 100%);
+}
+
+.moodDanger .year {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 20px;
+  }
+  
+  .visual {
+    padding: 20px;
+  }
+}
